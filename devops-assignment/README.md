@@ -111,8 +111,14 @@ The `Jenkinsfile` defines these stages:
 - The `/metrics` endpoint is automatically exposed by `prometheus-fastapi-instrumentator`.
 
 ## Output
-1. <img width="959" height="479" alt="Screenshot 2026-04-16 185503" src="https://github.com/user-attachments/assets/cd92e5cc-cf6c-48e6-aacd-822e1e8d9a09" />
-2. <img width="959" height="418" alt="Screenshot 2026-04-16 190127" src="https://github.com/user-attachments/assets/5af00d2e-b101-4f77-b368-2a48b3177ac6" />
-3. <img width="959" height="419" alt="Screenshot 2026-04-16 185717" src="https://github.com/user-attachments/assets/031184f2-ddae-48c9-925f-a8709cd62830" />
+# Docker Desktop
+<img width="949" height="499" alt="Screenshot 2026-04-16 191101" src="https://github.com/user-attachments/assets/d1dad1e3-1a86-4ecb-9b28-353cb5f22cad" />
+
+# 1. fastapi_app
+<img width="959" height="479" alt="Screenshot 2026-04-16 185503" src="https://github.com/user-attachments/assets/cd92e5cc-cf6c-48e6-aacd-822e1e8d9a09" />
+# 2. prometheus
+<img width="959" height="418" alt="Screenshot 2026-04-16 190127" src="https://github.com/user-attachments/assets/5af00d2e-b101-4f77-b368-2a48b3177ac6" />
+# 3. grafana
+4. <img width="959" height="419" alt="Screenshot 2026-04-16 185717" src="https://github.com/user-attachments/assets/031184f2-ddae-48c9-925f-a8709cd62830" />
 
 
