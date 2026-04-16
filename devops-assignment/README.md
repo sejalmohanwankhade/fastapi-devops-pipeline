@@ -119,6 +119,6 @@ The `Jenkinsfile` defines these stages:
 # 2. prometheus
 <img width="959" height="418" alt="Screenshot 2026-04-16 190127" src="https://github.com/user-attachments/assets/5af00d2e-b101-4f77-b368-2a48b3177ac6" />
 # 3. grafana
-4. <img width="959" height="419" alt="Screenshot 2026-04-16 185717" src="https://github.com/user-attachments/assets/031184f2-ddae-48c9-925f-a8709cd62830" />
+<img width="959" height="419" alt="Screenshot 2026-04-16 185717" src="https://github.com/user-attachments/assets/031184f2-ddae-48c9-925f-a8709cd62830" />
 
 
