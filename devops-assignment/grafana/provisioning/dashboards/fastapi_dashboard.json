@@ -1,0 +1,58 @@
+{
+  "title": "FastAPI Monitoring",
+  "uid": "fastapi-dashboard",
+  "version": 1,
+  "schemaVersion": 27,
+  "panels": [
+    {
+      "id": 1,
+      "title": "Total HTTP Requests",
+      "type": "stat",
+      "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 },
+      "targets": [
+        {
+          "expr": "sum(http_requests_total{job=\"fastapi\"})",
+          "legendFormat": "Total Requests"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Request Rate (req/sec)",
+      "type": "graph",
+      "gridPos": { "x": 6, "y": 0, "w": 18, "h": 8 },
+      "targets": [
+        {
+          "expr": "rate(http_requests_total{job=\"fastapi\"}[1m])",
+          "legendFormat": "{{method}} {{handler}} {{status_code}}"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Average Response Time (seconds)",
+      "type": "graph",
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "expr": "rate(http_request_duration_seconds_sum{job=\"fastapi\"}[1m]) / rate(http_request_duration_seconds_count{job=\"fastapi\"}[1m])",
+          "legendFormat": "{{handler}}"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "HTTP Errors (4xx/5xx)",
+      "type": "graph",
+      "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "expr": "rate(http_requests_total{job=\"fastapi\", status_code=~\"4..|5..\"}[1m])",
+          "legendFormat": "{{status_code}} {{handler}}"
+        }
+      ]
+    }
+  ],
+  "time": { "from": "now-1h", "to": "now" },
+  "refresh": "10s"
+}
